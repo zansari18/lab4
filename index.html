@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>volunteer form </title>
+</head>
+<body>
+	<h1>Volunteer Form</h1>
+	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
+	<fieldset>
+		<legend> <strong>My info:</strong></legend>
+		<div><label>First name:<input type="text" name="first_name_field"></label></div>
+		<div><label>Last name:<input type="text" name="last_name_field"></label></div>
+		<div><label>Phone Number:<input type="text" name="phone_field"></label></div>
+		<div><label>Email:<input type="text" name="email_field"></label></div>
+		<div>Gender:</div>
+			<div>
+				<label>male<input type="radio" name="gender_field" value="male"></label>
+				<label>female<input type="radio" name="gender_field" value="female"></label>
+			</div>
+		<div>Age:</div>
+			<select name="age_field">
+				<option value="under 18">under 18</option>
+				<option value="18-24">18-24</option>
+				<option value="25-34">25-34</option>
+				<option value="35-44">35-44</option>
+				<option value="45-54">45-54</option>
+				<option value="55-64">55-64</option>
+				<option value="65 and over">65 and over</option>
+			</select>
+		
+	</fieldset>
+	<fieldset>
+		<legend><strong>My Availability</strong></legend>
+		<h3>Days Available:</h3>
+		
+			<div><label>Sunday<input type="checkbox"name="available_field[]"value="Sunday"></label></div>
+			<div><label>Monday<input type="checkbox"name="available_field[]"value="Monday"></label></div>
+			<div><label>Tuesday<input type="checkbox"name="available_field[]"value="Tuesday"></label></div>
+			<div><label>Wednesday<input type="checkbox"name="available_field[]"value="Wednesday"></label></div>
+			<div><label>Thursday<input type="checkbox"name="available_field[]"value="Thursday"></label></div>
+			<div><label>Friday<input type="checkbox"name="available_field[]"value="Friday"></label></div>
+			<div><label>Saturday<input type="checkbox"name="available_field[]"value="Saturday"></label></div>
+		</div>
+		<div>
+		</div>
+		<div><label>Any comments?</label></div>
+			<div><textarea rows="10" cols="45" name="comments_field"></textarea></div>
+		
+	</fieldset>
+	<input type="hidden" name="hidden_field" value "zansari1">
+	<input type="submit"name="send me">
+	</form>
+</body>
+</html>
+			
+	
